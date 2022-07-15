@@ -1,0 +1,25 @@
+.minterContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p, h1, h2, h3 {
+    text-shadow: 2px 2px 2px #000000;
+  }
+}
+
+.mintButton {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+

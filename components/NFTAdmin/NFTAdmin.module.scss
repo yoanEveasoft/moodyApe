@@ -1,0 +1,122 @@
+.BOContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .button {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  padding: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: grey;
+} */
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .button:before {
+    position: absolute;
+    top: 0;
+    left: -500px;
+    content: "";
+    width: 15%;
+    height: 500px;
+    background: lightgray;
+    transform: skew(-50deg);
+    animation: shine 2.5s ease infinite;
+  }
+
+  @keyframes shine {
+    from {
+      left: -500px;
+    }
+    to {
+      left: 655px;
+    }
+  }
+
+  .img {
+    height: 18rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .emoji {
+    margin-top: 60px;
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.private_sale_title {
+  font-weight: bold;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+@media (max-width: 576px) {
+  .private_sale_title {
+    max-width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+}

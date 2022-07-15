@@ -1,0 +1,130 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  // overflow: hidden;
+  padding-top: 60px;
+
+  .video {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120%;
+  }
+
+  .mintWrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+
+    .nft_tete_singe {
+      width: 95px;
+      margin-bottom: 0px;
+    }
+
+    .private_sale_title {
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: uppercase;
+      background-color: black;
+      color: white;
+      width: fit-content;
+      margin: auto;
+      border-radius: 5px;
+      padding: 10px 15px;
+    }
+
+    .mint_card {
+      background-color: black;
+      padding: 20px;
+      margin: auto;
+      width: fit-content;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 7px;
+      text-align: center;
+
+      .nft_logo {
+        width: 250px;
+        margin-bottom: 15px;
+      }
+
+      .warning_blue_message {
+        color: cyan;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        .ether_logo {
+          width: 20px;
+        }
+      }
+
+      .number{
+        padding-left : 5px;
+        padding-right : 5px;
+        color: #f8d407;
+      }
+
+      .remaining {
+        color: pink;
+        font-weight: bold;
+      }
+    }
+
+    .collect_wallet {
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: capitalize;
+      background-color: black;
+      color: white;
+      width: fit-content;
+      margin: auto;
+      border-radius: 5px;
+      padding: 10px 15px;
+    }
+
+    .btn {
+      color: #f8d407;
+    }
+
+    .btn, .button {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    overflow: inherit;
+
+    .video {
+      height: 100%;
+      width: unset;
+    }
+
+    .button_container {
+      flex-direction: column;
+
+      .button {
+        margin-bottom: 10px !important;
+      }
+    }
+
+  }
+}
+

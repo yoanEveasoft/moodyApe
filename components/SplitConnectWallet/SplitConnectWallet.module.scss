@@ -1,0 +1,55 @@
+.button_container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button {
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 35px;
+    margin: 0 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .logo {
+    height: 30px;
+    margin-right: 15px;
+  }
+}
+.collect_wallet {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: black;
+  border-color: black;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+
+  &:focus, &:hover, &:active, &:focus {
+    background-color: black;
+    border-color: black;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button_container {
+    flex-direction: column;
+
+    .button {
+      margin-bottom: 10px !important;
+    }
+  }
+}
+

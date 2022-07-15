@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  background-color: #151515;
+
+  .header {
+    height: 78px;
+    width: 100vw;
+    background-color: #0000003B;
+
+    .headerWrapper {
+      display: flex;
+      align-items: center;
+
+      img {
+        max-height: 70px;
+      }
+    }
+  }
+
+  .rootWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+
+    h4 {
+      margin-top: 20px;
+    }
+  }
+
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+
+    .footerWrapper {
+      max-width: 1140px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
